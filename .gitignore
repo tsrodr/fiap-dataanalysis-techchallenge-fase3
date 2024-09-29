@@ -1,0 +1,69 @@
+# Ignore directories for virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+nosetests.xml
+test-reports/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm project files
+.idea/
+
+# VSCode settings
+.vscode/
+
+# Pyre type checker
+.pyre/
+
+# mypy type checker
+.mypy_cache/
+
+# Ignore local configurations
+*.local
+*.env
+.env.*
+.venv.*
+
+# Ignore logs and debug files
+*.log
+*.temp
