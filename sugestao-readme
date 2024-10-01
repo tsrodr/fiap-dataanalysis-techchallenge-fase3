@@ -1,0 +1,129 @@
+Sugestão de organização e conclusão
+
+READ ME / Streamlit Páginas
+
+Streamlit Páginas
+01 - O Challenge
+02 - Propósito e fluxo de trabalho
+03 - Processo de desenvolvimento - Códigos e Ferramentas utilizadas e descrição das Bibliotecas
+04 - Segmentação das análises
+05 - Gráficos e análises
+06 - Possíveis recomendações a partir dos nossos diagnósticos
+07 - Conclusão final
+
+READ ME / Conteúdo das páginas
+Descrição do Desafio
+
+Este projeto tem como objetivo realizar uma análise abrangente da incidência de sintomas e casos confirmados de COVID-19, visando entender o comportamento da população durante a pandemia. Utilizamos dados segmentados por diversos fatores, incluindo sexo, cor/raça, escolaridade, faixa etária e características econômicas.
+
+Com base nos dados do estudo PNAD-COVID-19 do IBGE, o foco principal é identificar padrões e correlações que possam fornecer insights valiosos para a tomada de decisões em futuras situações semelhantes. Os dados analisados incluem:
+
+Características clínicas dos sintomas
+Características da população
+Características econômicas da sociedade
+Além disso, este projeto considera:
+
+A seleção de no máximo 20 questionamentos relevantes da pesquisa.
+Um período de 3 meses para a construção da solução.
+A caracterização dos sintomas clínicos da população.
+O comportamento da população durante a pandemia.
+A identificação de ações que o hospital deve tomar em caso de um novo surto de COVID-19.
+Ao entender como diferentes grupos demográficos e sociais foram impactados pela pandemia, podemos desenvolver estratégias mais eficazes para resposta e prevenção, garantindo uma abordagem mais informada e direcionada em possíveis novos surtos.
+
+ Propósito e fluxo de trabalho
+A seleção das análises foi organizada em três categorias principais: características clínicas, populacionais e econômicas, além de uma análise cronológica. Na dimensão clínica, foi avaliada a relação entre sintomas e variáveis como sexo e raça. 
+As características da população abordaram como fatores demográficos situação domiciliar, faixa etária e escolaridade, influenciaram a presença de sintomas e a confirmação de casos. 
+Já nas características econômicas, focou-se no impacto da faixa de rendimento e na influência do acesso a planos de saúde no atendimento e tratamento da COVID-19, refletindo a desigualdade no acesso aos cuidados de saúde. 
+Com essa abordagem, foi possível ter uma visão ampla dos efeitos da pandemia em diferentes esferas da sociedade. Por fim, a análise cronológica permitiu observar a evolução dos casos ao longo do tempo e as tendências regionais, proporcionando insights sobre os momentos críticos da pandemia.
+
+
+Processo de desenvolvimento - Códigos e Ferramentas utilizadas
+
+No projeto, utilizamos o BigQuery como nosso banco de dados e o Apache Spark para processar e tratar os dados. O fluxo completo de execução do projeto está dividido em diferentes etapas, desde o download das bases até a geração dos gráficos finais.
+
+1. Download de Bases
+No notebook "download_bases.ipynb", realizamos o download das bases de dados brutos e seus respectivos dicionários/dimensões. Este passo é essencial para garantir que todas as informações necessárias para as análises estejam disponíveis e organizadas.
+
+2. Processamento Inicial e Upload no BigQuery - SOR
+No notebook "carregando_tabelas_no_bigquery_sor.ipynb", utilizamos o Spark para realizar o processamento inicial das bases. Nesse ponto, realizamos o upload das tabelas para o BigQuery na camada SOR (dados brutos e não transformados).
+
+3. Tratamento dos Dados e Upload no BigQuery - SPEC
+No notebook "carregando_tabelas_no_bigquery_spec.ipynb", trabalhamos no tratamento das colunas, traduzindo valores e preparando os dados para análise. Utilizamos duas tabelas do dataset SOR (tbx001_data e tbx002_dimensao_geral) para criar a tabela tbx001_data no dataset SPEC. A tabela SPEC inclui 20 colunas selecionadas com base em sua relevância para as análises, como:
+
+Estado, Ano, Mês, Semana
+Sexo, Cor/Raça, Tipo de Área, Escolaridade
+Situação de Domicílio, Teve COVID, Resultado COVID
+Entre outras variáveis relevantes para a análise da pandemia.
+
+Ferramentas utilizadas
+Descrição das Bibliotecas  
+Links para os notebooks
+
+
+Segmentação das análises baseada no enunciado
+
+Características Clínicas dos Sintomas
+
+Optamos por sintetizar as informações de sintomas e contágio e as análises foram distribuídas nas demais categorias em diferentes contextos, além de acompanhamento cronológico.
+Dentro das análises consideramos parâmetros de idade, sexo, raça, acesso a serviços de saúde, renda e moradia. Temos as seguintes temáticas:
+
+Características da População
+Análise de Pessoas com Sintomas e COVID-19 Confirmado por Situação do Domicílio e Sexo
+Análise de Percentual de Pessoas com Sintomas e COVID Confirmado por Sexo e Cor/Raça
+Análise de Pessoas com Sintomas e COVID-19 Confirmado por Faixa Etária e Sexo
+Análise de Distribuição por Escolaridade
+Análise dos Top 5 Estados com Pessoas que Tiveram Sintomas ou COVID-19 Confirmado
+
+
+Características Econômicas da Sociedade
+Análise de Pessoas com Sintomas e COVID-19 Confirmado por Faixa de Rendimento
+Análise da Relação entre Plano de Saúde e Atendimento em Posto de Saúde ou Hospital para Casos de COVID-19
+Análise Cronológica
+Evolução de Casos Confirmados de COVID-19 por Semana de Cada Mês
+Evolução de Casos Confirmados de COVID-19 por Estado e Semana de Cada Mês (Top 5 Estados)
+
+ Gráficos e análises
+
+ANÁLISES - CONCLUSÃO 
+Recomendações para Ação Governamental
+
+
+1. Foco em Grupos Vulneráveis por Faixa Etária e Renda
+Atenção especial às faixas etárias de 30-49 anos independente do sexo, que mostraram alta incidência de casos confirmados de COVID-19, por meio de campanhas de conscientização e vacinação.
+Políticas de assistência e proteção para as faixas de baixa renda, como subsídios de saúde e acesso gratuito a tratamentos e testes, pois pessoas com rendas mais baixas foram desproporcionalmente afetadas.
+
+2. Investimento em Saúde Pública nas Regiões Mais Atingidas
+Fortalecimento do sistema de saúde nos estados mais afetados, como São Paulo, Minas Gerais, e Rio de Janeiro, com alocação adicional de recursos médicos, vacinas e campanhas de testagem massiva.
+Monitoramento mais rigoroso e suporte emergencial para estados que apresentam picos localizados que podem estar identificando falhas de atendimento ou surtos locais.
+
+3. Aprimoramento do atendimento e parcerias com planos de saúde e gerando maior atendimento hospitalar
+Ampliação do volume de atendimento ou incentivar programas de expansão do acesso a planos de saúde com a integração entre o sistema público e privado facilitando o encaminhamento de pacientes de um sistema para o outro, quando necessário. Ainda que a busca por atendimento seja diferente, ambos têm um contágio muito parecido.
+
+4. Educação e conscientização considerando escolaridade
+A alta incidência de sintomas e casos confirmados em grupos com menor escolaridade sugere a necessidade de campanhas de educação sanitária voltadas especificamente para pessoas com baixa escolaridade, ou jovens cursando ensino médio, talvez com a utilização de linguagem simples e acessível para promover medidas de prevenção.
+Capacitação de líderes comunitários para atuarem como disseminadores de informações e agentes de conscientização nas comunidades de baixa escolaridade.
+
+5. Ampliação de testagem e monitoramento em áreas e domicílios Mais Vulneráveis
+Intensificação das ações de testagem e monitoramento em áreas rurais e domicílios cedidos ou alugados, que registraram maior prevalência de sintomas
+Implementar programas de visitas domiciliares para monitorar e auxiliar as populações em áreas de difícil acesso ou com recursos limitados.
+
+6. Estudo contínuo da evolução dos casos
+Monitoramento semanal e regional dos casos de COVID-19 deve ser mantido, com foco nos estados que apresentam flutuações nos números, como observado a partir de novembro. Isso pode ajudar a prever surtos futuros e permitir respostas rápidas.
+7. Medidas específicas para grupos sub-representados
+Incentivar o registro adequado e melhorar a notificação de casos em grupos  sub-representados identificadas por estudos.
+8. Promoção de saúde Mental e suporte social
+Implementar políticas de apoio psicológico para pessoas em domicílios alugados e cedidos, onde a prevalência de sintomas foi maior pode ser uma opção válida, visto que ainda são pessoas sem moradia própria. A situação habitacional pode estar relacionada a estresse e vulnerabilidade social, o que pode agravar a crise sanitária.
+
+
+Conclusão final 
+
+Para conter a COVID-19, é essencial implementar campanhas educativas voltadas para grupos vulneráveis por faixa etária e escolaridade, enquanto se intensifica a testagem e o monitoramento em áreas de maior vulnerabilidade. O acesso ampliado a atendimento e políticas de assistência financeira para grupos de baixa renda são cruciais para garantir maior equidade nos cuidados. Investir na infraestrutura de saúde nas regiões mais atingidas, mantendo o estudo contínuo e aplicando respostas rápidas a surtos, ajudará a controlar a evolução da pandemia. Além disso, oferecer suporte psicológico e incluir grupos sub-representados nas estratégias de saúde pública contribuirá para uma resposta mais abrangente e eficaz.
+
+
+
+Imagens 
+https://drive.google.com/drive/folders/1VpePhG8BLyJPf6omKZWc_SMOjxsPZ1LG?usp=sharing
+
+
+
+
