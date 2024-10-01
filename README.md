@@ -229,3 +229,23 @@ Destacamos as seguintes áreas de atuação:
 4. **Monitoramento Ativo**: Um acompanhamento constante nas áreas onde os casos estão aumentando rapidamente é fundamental, assim podemos implementar restrições temporárias quando necessário.
 
 Ao unirmos forças e implementarmos essas ações de forma coordenada, podemos não apenas reduzir o risco de novos surtos de COVID-19, mas também proteger a saúde de toda a população de forma mais eficaz. 
+
+---
+
+## GRUPO
+
+**Grupo 57**
+
+### INTEGRANTES DO GRUPO 57
+
+- **Thiago dos Santos Oliveira**  
+  oliveira.thiago345@hotmail.com
+
+- **Felipe Santos Rocha**  
+  sr1179281008@live.com
+
+- **Tiago Silva Rodrigues**  
+  ti_ago_silva@hotmail.com
+
+- **Bianca Vasconcelos Silva**  
+  biavasco.md@gmail.com
