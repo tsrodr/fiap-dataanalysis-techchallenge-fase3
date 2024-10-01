@@ -1,3 +1,10 @@
+# Link para o Aplicativo Streamlit
+
+Este é o link para acessar a aplicação completa hospedada no Streamlit Cloud:
+
+[Link para o Streamlit App](https://fiap-dataanalysis-techchallenge-fase3-vxsreneykzjljk2h853ay3.streamlit.app/)
+
+
 # Análise de Dados de COVID-19
 
 Este projeto tem como objetivo realizar uma análise abrangente da incidência de sintomas e casos confirmados de COVID-19, visando entender o comportamento da população durante a pandemia. Utilizamos dados segmentados por diversos fatores, incluindo sexo, cor/raça, escolaridade, faixa etária e características econômicas.
@@ -231,21 +238,3 @@ Destacamos as seguintes áreas de atuação:
 Ao unirmos forças e implementarmos essas ações de forma coordenada, podemos não apenas reduzir o risco de novos surtos de COVID-19, mas também proteger a saúde de toda a população de forma mais eficaz. 
 
 ---
-
-## GRUPO
-
-**Grupo 57**
-
-### INTEGRANTES DO GRUPO 57
-
-- **Thiago dos Santos Oliveira**  
-  oliveira.thiago345@hotmail.com
-
-- **Felipe Santos Rocha**  
-  sr1179281008@live.com
-
-- **Tiago Silva Rodrigues**  
-  ti_ago_silva@hotmail.com
-
-- **Bianca Vasconcelos Silva**  
-  biavasco.md@gmail.com
