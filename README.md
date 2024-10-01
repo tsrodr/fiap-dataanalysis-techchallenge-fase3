@@ -128,7 +128,7 @@ Aqui, analisamos a relação entre as pessoas que possuem plano de saúde e se e
 
 ### Análise de Pessoas com Sintomas e COVID-19 Confirmado por Situação do Domicílio e Sexo
 
-Essa análise mostra a distribuição de sintomas e casos confirmados de COVID-19 segmentados pela situação do domicílio (urbano/rural) e pelo sexo. O gráfico combinado permite observar se há uma correlação direta entre o tipo de área em que as pessoas vivem e a incidência da doença.
+Essa análise mostra a distribuição de sintomas e casos confirmados de COVID-19 segmentados pela situação do domicílio e pelo sexo. O gráfico combinado permite observar se há uma correlação direta entre o tipo de área em que as pessoas vivem e a incidência da doença.
 
 ![Imagem Situação do Domicílio e Sexo](./imagens/imagem5.png)
 
